@@ -3,7 +3,7 @@ import type { ConfigContext, ExpoConfig } from "expo/config";
 export default ({ config }: ConfigContext): ExpoConfig => ({
   ...config,
   name: "expo",
-  slug: "expo",
+  slug: "hyperpost",
   scheme: "expo",
   version: "0.1.0",
   orientation: "portrait",
@@ -19,21 +19,21 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
   },
   assetBundlePatterns: ["**/*"],
   ios: {
-    bundleIdentifier: "your.bundle.identifier",
+    bundleIdentifier: "fi.readysetcode.hyperpost",
     supportsTablet: true,
   },
   android: {
-    package: "your.bundle.identifier",
+    package: "fi.readysetcode.hyperpost",
     adaptiveIcon: {
       foregroundImage: "./assets/icon.png",
       backgroundColor: "#1F104A",
     },
   },
-  // extra: {
-  //   eas: {
-  //     projectId: "your-eas-project-id",
-  //   },
-  // },
+  extra: {
+    eas: {
+      projectId: "491dbf05-a7c7-422a-90bf-d8b29c83aa3f",
+    },
+  },
   experiments: {
     tsconfigPaths: true,
     typedRoutes: true,
